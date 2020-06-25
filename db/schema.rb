@@ -53,6 +53,8 @@ ActiveRecord::Schema.define(version: 2020_06_24_151907) do
     t.integer "status", default: 0
     t.bigint "helper_id"
     t.integer "category", default: 0
+    t.float "long", null: false
+    t.float "lat", null: false
     t.index ["helper_id"], name: "index_requests_on_helper_id"
     t.index ["requester_id"], name: "index_requests_on_requester_id"
   end
